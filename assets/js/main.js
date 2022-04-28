@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $('#country-access-modal').modal({
-        show: true,
-        backdrop: 'static',
-        keyboard: false
-    });
+    // $('#country-access-modal').modal({
+    //     show: true,
+    //     backdrop: 'static',
+    //     keyboard: false
+    // });
 
     $('.watch-btn').click(function(){
         $('#video-modal').modal('toggle')
@@ -30,29 +30,29 @@ $(document).ready(function(){
         })
     })
     
-    let options = {
-        series: [58, 23, 10, 9],
-        labels: ["1st Qtr", "2nd Qtr", "3rd Qtr", "4th Qtr"],
-        colors:['#101820', '#da291b', '#5b6770', '#a4dbe8'],
-        legend: {
-            horizontalAlign: 'bottom', 
-        },
-        chart: {
-        type: 'donut',
-      },
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 400
-          },
-          legend: {
-            position: 'bottom'
-          }
-        }
-      }]
-      };
+    // let options = {
+    //     series: [58, 23, 10, 9],
+    //     labels: ["1st Qtr", "2nd Qtr", "3rd Qtr", "4th Qtr"],
+    //     colors:['#101820', '#da291b', '#5b6770', '#a4dbe8'],
+    //     legend: {
+    //         horizontalAlign: 'bottom', 
+    //     },
+    //     chart: {
+    //     type: 'donut',
+    //   },
+    //   responsive: [{
+    //     breakpoint: 480,
+    //     options: {
+    //       chart: {
+    //         width: 400
+    //       },
+    //       legend: {
+    //         position: 'bottom'
+    //       }
+    //     }
+    //   }]
+    //   };
 
-      var chart = new ApexCharts(document.querySelector("#donut-chart"), options);
-      chart.render();
+    //   var chart = new ApexCharts(document.querySelector("#donut-chart"), options);
+    //   chart.render();
 })
