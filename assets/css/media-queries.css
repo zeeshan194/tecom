@@ -1,0 +1,8 @@
+@media (max-width : 600px) {
+    
+.c-nav-menu .navbar-nav>li:after {
+    content: "";
+    padding: 0px 10px;
+    color: #fff;
+}
+}
