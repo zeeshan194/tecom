@@ -1,8 +1,68 @@
-@media (max-width : 600px) {
-    
-.c-nav-menu .navbar-nav>li:after {
-    content: "";
-    padding: 0px 10px;
-    color: #fff;
-}
+@media (max-width: 600px){
+    .c-nav{
+        height: 80px;
+        background-color: #414042 !important;
+        padding: 0px !important;
+    }
+    .c-nav img{
+        padding-left: 20px;
+    }
+    .c-nav .navbar-toggler{
+        margin-right: 20px;
+    }
+    .c-nav-menu{
+        padding: 0px 20px 50px 20px;
+        background-color: #414042 !important;
+    }
+    .leadership-message-container {
+        text-align: left;
+    }
+    .c-nav-menu .navbar-nav>li:after {
+        content: "";
+        padding: 0px 10px;
+        color: #fff;
+    }
+    .col1{
+        margin-top: 15px;
+    }
+    .image3-container{
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    .image3{
+        width: 95%;
+        text-align: center;
+    }
+    .image3-container .c-heading4{
+        text-align: center;
+    }
+    .techom-number-container:nth-child(2),
+    .techom-number-container:nth-child(4){
+        padding-left: 0px !important;
+    }
+    .invest-box{
+        margin-top: 15px;
+    }
+    .footer-heading2{
+        margin-top: 20px;
+    }
+    .footer2 div:nth-child(1){
+        text-align: center;
+    }
+    .footer2 div:nth-child(2){
+        margin-top: 10px;
+        text-align: center;
+    }
+    .leadership-message-desktop{
+        display: none;
+    }
+    .leadership-message-mobile{
+        display: inline-block;
+    }
+    .leadership-message-container img{
+        width: 50%;
+    }
+    .document-container2{
+        margin-left: 0px;
+    }
 }

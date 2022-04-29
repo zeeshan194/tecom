@@ -1,19 +1,38 @@
 $(document).ready(function(){
-    // $('#country-access-modal').modal({
-    //     show: true,
-    //     backdrop: 'static',
-    //     keyboard: false
-    // });
+    $('#country-access-modal').modal({
+        show: true,
+        backdrop: 'static',
+        keyboard: false
+    });
+
+    $(".faq-item").click(function(){
+        let src = $(this).find(".faqs-icon").attr("src")
+        if(src === "assets/images/down-icon.png"){
+            $(this).find(".faqs-icon").attr("src", "assets/images/up-icon.png")
+        }else{
+            $(this).find(".faqs-icon").attr("src", "assets/images/down-icon.png")
+        }
+    })
 
     $('.watch-btn').click(function(){
         $('#video-modal').modal('toggle')
     })
 
+    $('#select-country').change(function(){
+        let selectedCountry = $('#select-country').val()
+        if(selectedCountry){
+            $(".select-country-error").css("display", "none")
+        }else{
+            $(".select-country-error").css("display", "block")
+        }
+    })
     $('.proceed-btn').click(function(){
         let selectedCountry = $('#select-country').val()
         if(selectedCountry){
             $(".modal-initial-content").css("display", "none")
             $(".modal-proceed-content").css("display", "block")
+        }else{
+            $(".select-country-error").css("display", "block")
         }
 
         $(".not-agree-btn").click(function(){
