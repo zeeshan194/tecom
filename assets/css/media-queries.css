@@ -1,4 +1,7 @@
 @media (max-width: 600px){
+    section{
+        padding: 20px 0px;
+    }
     .c-nav{
         height: 80px;
         background-color: #414042 !important;
@@ -13,6 +16,9 @@
     .c-nav-menu{
         padding: 0px 20px 50px 20px;
         background-color: #414042 !important;
+    }
+    .image1-container{
+        margin-top: 0px;
     }
     .leadership-message-container {
         text-align: left;
@@ -59,10 +65,28 @@
     .leadership-message-mobile{
         display: inline-block;
     }
+    .leadership-message-container{
+        margin-left: 5px !important;
+    }
     .leadership-message-container img{
-        width: 50%;
+        vertical-align: bottom;
+        width: 25%;
     }
     .document-container2{
         margin-left: 0px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 22px !important;
+    }
+    .logo-img{
+        width: 100%;
+        height: 55px;
+    }
+    .c-heading3{
+        font-size: 26px;
+    }
+    .footer2 div:nth-child(2){
+        margin-top: 0px;
     }
 }

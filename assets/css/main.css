@@ -11,7 +11,10 @@ body {
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
-
+.logo-img{
+    width: 100%;
+    height: 40px;
+}
 #country-access-modal > div {
     max-height: 420px;
     max-width: 640px;
@@ -29,23 +32,6 @@ body {
     margin-bottom: 12px;
 }
 .language-container a{
-    /* border-radius: 40px;
-    -webkit-transition: box-shadow 0.3s,background-color 0.3s,color 0.3s;
-    -moz-transition: box-shadow 0.3s,background-color 0.3s,color 0.3s;
-    transition: box-shadow 0.3s,background-color 0.3s,color 0.3s;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: bold;
-    overflow: hidden;
-    vertical-align: middle;
-    margin-top: 0;
-    white-space: nowrap;
-    box-sizing: border-box;
-    color: #6D6E71;
-    background-color: white;
-    border: 2px solid #6D6E71;
-    padding: 4px 16px 3px; */
     font-size: 16px;
     color: #CF2D1E;
     text-decoration: underline;
@@ -53,11 +39,11 @@ body {
 
 .c-heading{
     font-family: Calibri, sans-serif;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 44px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0rem;
+    margin-bottom: 15px;
 }
 .c-heading1{
     color: #7A7979;
@@ -68,7 +54,7 @@ body {
 .c-para{
     color: #000000;
     font-weight: 400 !important;
-    font-size: 12px;
+    font-size: 18px;
 }
 .country-list label{
     display: block;
@@ -88,7 +74,7 @@ body {
 
 .watch-btn{
     color: #fff;
-    background-color: red;
+    background-color: #cf2d1e;
     padding: 10px;
     text-align: center;
     width: 140px;
@@ -132,7 +118,7 @@ body {
 }
 .c-nav-menu .navbar-nav>li:after {
     content: " | ";
-    padding: 0px 10px;
+    padding: 0px 0px;
     color: #fff;
 }
 
@@ -175,7 +161,7 @@ body {
 .c-heading4{
     color: #7A7979;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 .c-heading3{
@@ -191,14 +177,14 @@ body {
     padding: 10px;
     border: 1px solid #2C2C2B;
 }
-.invest-box .c-heading3{
-    font-size: 14px;
+.c-heading3{
+    font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin-top: 15px;
 }
-.invest-box .image4-container{
+.image4-container{
     text-align: center;
 }
 .invest-list ul {
@@ -213,12 +199,15 @@ body {
 }
 .approach-list-container ul{
     padding-left: 15px;
-    font-size: 12px;
+    font-size: 16px;
+}
+.image1-container{
+    margin-top: -51px;
 }
 .image5-container img, 
 .image1-container img{
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: fill;
     object-position: 50% 50%;
 }
@@ -228,7 +217,7 @@ body {
 
 .span-document{
     color: #414042;
-    font-size: 12px;
+    font-size: 18px;
     margin-left: 5px;
 }
 .span-language{
@@ -245,6 +234,9 @@ body {
 
 
 .faq-item{
+    font-size: 22px;
+    padding: 15px 0px;
+    margin-top: 0px !important;
     border-bottom: 1px solid #E5E5E5;
     cursor: default;
 }
@@ -262,30 +254,31 @@ body {
 .footer1{
     background-color: #2C2C2B;
     color: #fff;
-    padding: 20px;
+    padding: 45px 20px;
 }
 .footer-heading1{
-    font-size: 16px;
+    font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .footer-heading2{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .footer-para{
-    font-size: 12px;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 .footer-link{
-    font-size: 12px;
+    font-size: 18px;
     text-decoration: underline;
 }
 .footer2{
     background-color: #000000;
     color: #fff;
-    font-size: 12px;
-    padding: 20px;
+    font-size: 10px;
+    padding: 3px 20px;
 }
 .footer2 div:nth-child(1){
     text-align: left;
@@ -296,4 +289,16 @@ body {
 
 .display-none-toggle {
     display: none;
+}
+
+
+/*bootstrap overright style */
+.collapse {
+    font-size: 18px;
+}
+section {
+    padding: 30px 0px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 14px !important;
 }

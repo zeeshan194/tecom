@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $('#country-access-modal').modal({
-        show: true,
-        backdrop: 'static',
-        keyboard: false
-    });
+    // $('#country-access-modal').modal({
+    //     show: true,
+    //     backdrop: 'static',
+    //     keyboard: false
+    // });
 
     $(".faq-item").click(function(){
         let src = $(this).find(".faqs-icon").attr("src")
