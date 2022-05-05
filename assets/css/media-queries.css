@@ -75,6 +75,12 @@
     .document-container2{
         margin-left: 0px;
     }
+    .bank-list-desktop-container{
+        display: none;
+    }
+    .bank-list-mobile-container{
+        display: block;
+    }
 
     .navbar-dark .navbar-nav .nav-link {
         font-size: 22px !important;

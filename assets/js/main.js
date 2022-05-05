@@ -5,12 +5,29 @@ $(document).ready(function(){
     //     keyboard: false
     // });
 
+    $(".bank-list-item").click(function(){
+        let bankName = $(this).text()
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".bank-name").text(bankName)
+    })
+
     $(".faq-item").click(function(){
         let src = $(this).find(".faqs-icon").attr("src")
         if(src === "assets/images/down-icon.png"){
             $(this).find(".faqs-icon").attr("src", "assets/images/up-icon.png")
         }else{
             $(this).find(".faqs-icon").attr("src", "assets/images/down-icon.png")
+        }
+    })
+
+    $(".bank-item").click(function(){
+        $("#section-banks").find(".bank-list-item").removeClass("active")
+        $(this).find(".bank-list-item").addClass("active")
+        let src = $(this).find(".bank-icon").attr("src")
+        if(src === "assets/images/down-icon.png"){
+            $(this).find(".bank-icon").attr("src", "assets/images/up-icon.png")
+        }else{
+            $(this).find(".bank-icon").attr("src", "assets/images/down-icon.png")
         }
     })
 
