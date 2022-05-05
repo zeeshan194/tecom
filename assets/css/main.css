@@ -142,7 +142,8 @@ body {
 .c-inner-content{
     min-height: 300px;
     max-height: 300px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .select-country-error{
@@ -327,7 +328,7 @@ body {
 
 
 /*style overright */
-.collapse {
+.collapse, .c-collapse {
     font-size: 18px;
 }
 section {
