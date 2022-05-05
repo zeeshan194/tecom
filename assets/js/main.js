@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    // $('#country-access-modal').modal({
-    //     show: true,
-    //     backdrop: 'static',
-    //     keyboard: false
-    // });
+    $('#country-access-modal').modal({
+        show: true,
+        backdrop: 'static',
+        keyboard: false
+    });
 
     $(".bank-list-item").click(function(){
         let bankName = $(this).text()
