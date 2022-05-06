@@ -1,4 +1,6 @@
 $(document).ready(function(){
+           
+
     $('#country-access-modal').modal({
         show: true,
         backdrop: 'static',

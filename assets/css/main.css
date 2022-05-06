@@ -164,7 +164,7 @@ body {
 .c-inner-content{
     min-height: 300px;
     max-height: 300px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
@@ -189,6 +189,7 @@ body {
 }
 .c-heading3{
     color: #CF2D1E;
+    text-align: left;
 }
 .image3-container{
     padding-left: 30px;
@@ -235,6 +236,9 @@ body {
     object-fit: fill;
     object-position: 50% 50%;
 }
+.image9-container {
+    padding-right: 0px;
+}
 .image6-container img{
     width: 100%;
 }
@@ -259,10 +263,16 @@ body {
 
 .faq-item{
     font-size: 22px;
-    padding: 15px 0px;
+    /* padding: 15px 0px; */
     margin-top: 0px !important;
-    border-bottom: 1px solid #E5E5E5;
+    /* border-bottom: 1px solid #E5E5E5; */
     cursor: default;
+}
+
+.faq-hr {
+    /* border-bottom: 1px solid #E5E5E5; */
+    color: #E5E5E5;
+    margin: 5px 0px;
 }
 
 .inline-block{
@@ -328,6 +338,8 @@ body {
     display: none;
 }
 .bank-list-item{
+    font-family: gothambold;
+    text-transform: uppercase;
     padding-left: 0px;
     font-size: 24px;
     cursor: default;

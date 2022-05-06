@@ -5,7 +5,8 @@
     .c-nav{
         height: 80px;
         background-color: #414042 !important;
-        padding: 0px !important;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .c-nav img{
         padding-left: 20px;
@@ -94,5 +95,14 @@
     }
     .footer2 div:nth-child(2){
         margin-top: 0px;
+    }
+    .image9-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .c-nav-menu .navbar-nav>li:not(:last-child)::after {
+        content: "";
+        padding: 0px 0px;
+        color: #fff;
     }
 }
