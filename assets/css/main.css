@@ -20,6 +20,7 @@ html{
 body {
     font-family: gotham, frutiger, sans-serif;
     padding-top: 5rem;
+    overflow-x: hidden !important;
   }
 
 .c-container{
@@ -30,6 +31,7 @@ body {
     /* text-align: center; */
     margin-right: 0px !important;
     margin-left: 0px !important;
+    overflow-x: hidden;
 }
 .logo-img{
     width: 100%;
@@ -133,6 +135,9 @@ body {
     font-weight: 400 !important;
     display: inline-block;
 }
+.c-nav {
+    height: 80px;
+}
 .c-nav-menu .navbar-nav li{
     display: inline-block;
     text-align: left;
@@ -225,9 +230,9 @@ body {
     padding-left: 15px;
     font-size: 16px;
 }
-.image1-container{
+/* .image1-container{
     margin-top: -51px;
-}
+} */
 .image5-container img, 
 .image8-container img, 
 .image1-container img{
