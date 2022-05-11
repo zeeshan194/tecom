@@ -278,11 +278,9 @@ time:nth-child(odd){
     border-left: unset;
   }
   .subscribe-content{
-      padding-top: 15px;
-      padding-left: 35px;
-      color: #CF2D1E;
-      font-size: 22px;
-      line-height: 27px;
+      color: #11171F;
+      font-size: 24px;
+      line-height: 18px;
       text-transform: uppercase;
   }
   .subscribe-item time {
@@ -290,9 +288,6 @@ time:nth-child(odd){
     float: left;
     background-color: #ffebeb;
     padding: 0.2em 0.4em;
-  }
-  .subscribe-item > * {
-    /* margin: 1em 0; */
   }
   .subscribe-item .location {
     clear: both;

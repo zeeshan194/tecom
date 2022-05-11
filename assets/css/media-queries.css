@@ -115,10 +115,13 @@
     .faq-dot{
         margin-right: 5px;
     }
-    .subscribe-container .c-para,
+    /* .subscribe-container .c-para,
     .subscribe-container .subscribe-heading{
         padding-left: 45px;
         margin-bottom: 0px;
+    } */
+    .subscribe-counter{
+        vertical-align: baseline;
     }
     .sub-item{
         background-position: -35px;
@@ -131,5 +134,8 @@
     }
     .span-heading2{
         margin-left: 0px !important;
+    }
+    .image-wrapper{
+        min-height: 40vh;
     }
 }

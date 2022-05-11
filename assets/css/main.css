@@ -230,7 +230,7 @@ body {
     font-family: gothambold;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     color: #11171F;
     text-align: left;
 }
@@ -258,16 +258,30 @@ body {
 .image2{
     width: 100%;
 }
-.image5-container img, 
+/* .image5-container img, 
 .image8-container img, 
 .image1-container img{
     width: 100%;
     height: 100%;
     object-fit: fill;
     object-position: 50% 50%;
+} */
+.image-wrapper {    
+    background-position: center !important;
+    background-size: cover !important;
+    image-rendering: -webkit-optimize-contrast;
 }
-.image9-container {
-    padding-right: 0px;
+.image9-container{
+    background: url(../images/image9.jpg);
+    min-height: 80vh;
+}
+.image1-container{
+    background: url(../images/image1.jpg);
+    min-height: 90vh;
+}
+.image5-container{
+    background: url(../images/image5.jpg);
+    min-height: 80vh;
 }
 .image6-container img{
     width: 100%;
@@ -417,7 +431,9 @@ body {
     margin-left: 5px;
     margin-right: 30px;
 }
-
+.subscribe-container{
+    margin-top: 40px;
+}
 .subscribe-container .c-para,
 .subscribe-container .subscribe-heading{
     padding-left: 50px;
@@ -426,24 +442,24 @@ body {
 }
 .subscribe-heading{
     font-family: gothambold;
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 15px;
     padding-bottom: 0px;
-}
-.subscribe-para{
-    padding-top: 0px;
-    font-size: 12px;
+    transform: uppercase;
 }
 .sub-item{
+    margin-top: 2em;
+}
+/* .sub-item{
     width: 100%;
     background-repeat: no-repeat;
     height: 100%;
     background-position: 0px;
     background-size: contain;
-}
-#subscribe-item1{
+} */
+/* #subscribe-item1{
     background-image: url(../images/subscribe-image1.png);
-}
+} */
 #subscribe-item2{
     background-image: url(../images/subscribe-image2.png);
 }
@@ -470,6 +486,36 @@ body {
     background-color: #7A7979;
     display: inline-block;
 }
+.subscribe-counter p{
+    font-size: 6rem;
+    line-height: 5rem;
+    color: #edeae7;
+    text-align: center;
+}
+.subscribe-content{
+    vertical-align: top;
+}
+.subscribe-content div{
+    vertical-align: top;
+    margin-left: -15px;
+}
+.subscribe-content .subscribe-heading,
+.subscribe-content .subscribe-para{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.subscribe-content .subscribe-heading{
+    margin-bottom: 5px;
+}
+.subscribe-content .subscribe-para{
+    line-height: 15px;
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+.intro-col{
+    margin-top: 4em;
+}
+
 
 
 /*style overright */

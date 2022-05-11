@@ -12,7 +12,7 @@ $(document).ready(function(){
         backdrop: 'static',
         keyboard: false
     });
-    
+
     $('.navbar li a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });
