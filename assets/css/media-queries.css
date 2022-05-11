@@ -4,7 +4,7 @@
     }
     .c-nav{
         height: 80px;
-        background-color: #414042 !important;
+        background-color: #11171F !important;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -16,7 +16,7 @@
     }
     .c-nav-menu{
         padding: 0px 20px 50px 20px;
-        background-color: #414042 !important;
+        background-color: #11171F !important;
     }
     .image1-container{
         margin-top: 0px;
@@ -60,9 +60,9 @@
         margin-top: 10px;
         text-align: center;
     }
-    .leadership-message-desktop{
+    /* .leadership-message-desktop{
         display: none;
-    }
+    } */
     .leadership-message-mobile{
         display: inline-block;
     }
@@ -100,6 +100,9 @@
         padding-left: 0px;
         padding-right: 0px;
     }
+    .image9-container img{
+        max-height: 260px;
+    }
     .c-nav-menu .navbar-nav>li:not(:last-child)::after {
         content: "";
         padding: 0px 0px;
@@ -107,5 +110,26 @@
     }
     .timeline ul li:last-child {
         margin:0px 0px 0px 20px;
+    }
+
+    .faq-dot{
+        margin-right: 5px;
+    }
+    .subscribe-container .c-para,
+    .subscribe-container .subscribe-heading{
+        padding-left: 45px;
+        margin-bottom: 0px;
+    }
+    .sub-item{
+        background-position: -35px;
+    }
+    .row-document-container{
+        border-bottom: unset;
+    }
+    .col-document-container:not(:last-child){
+        border-bottom: 1px solid #11171F;
+    }
+    .span-heading2{
+        margin-left: 0px !important;
     }
 }

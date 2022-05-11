@@ -1,16 +1,27 @@
 $(document).ready(function(){
-           
+    var url = window.location.href;
+    var lastPart = url.substr(url.lastIndexOf('/') + 1);
+    if (lastPart === "ar") {
+       $("body").css("direction", "rtl")
+    }else{
+        $("body").css("direction", "ltr")
+    }
 
     $('#country-access-modal').modal({
         show: true,
         backdrop: 'static',
         keyboard: false
     });
+    
+    $('.navbar li a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
 
     $(".bank-list-item").click(function(){
-        let bankName = $(this).text()
+        let id = $(this).attr("idattr")
         $(this).addClass('active').siblings().removeClass('active');
-        $(".bank-name").text(bankName)
+        $(".bank-details").css("display","none")
+        $('#'+id).css("display","block");
     })
 
     $(".faq-item").click(function(){
