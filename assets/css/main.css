@@ -278,6 +278,16 @@ body {
 .image1-container{
     background: url(../images/image1.jpg);
     min-height: 90vh;
+    position: relative;
+}
+.image1-container iframe {
+    min-height: 90vh;
+}
+.image1-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 .image5-container{
     background: url(../images/image5.jpg);
@@ -316,11 +326,10 @@ body {
     cursor: default;
 }
 
-.faq-hr {
-    /* border-bottom: 1px solid #E5E5E5; */
+/* .faq-hr {
     color: #E5E5E5;
     margin: 5px 0px;
-}
+} */
 
 .inline-block{
     display: inline-block
@@ -421,7 +430,7 @@ body {
 .subscribe-content{
     color: #11171F;
 }
-.faq-dot{
+/* .faq-dot{
     width: 5px;
     height: 5px;
     border-radius: 50%;   
@@ -430,7 +439,7 @@ body {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 30px;
-}
+} */
 .subscribe-container{
     margin-top: 40px;
 }
@@ -530,3 +539,75 @@ section {
     font-size: 12px !important;
     letter-spacing: 2px;
 }
+
+/********************** General classes ***************************/
+.fs-10 {
+    font-size: 10px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+
+.fw-4{
+    font-weight: 400;
+}
+.fst-i{
+    font-style: italic;
+}
+.lh-22{
+    line-height: 22px;
+}
+.lh-30{
+    line-height: 30px;
+}
+.ml-15{
+    margin-left: 15px;
+}
+
+/********************** FAQS page css starts ***************************/
+.page-container{
+    margin-top: 3rem;
+}
+.faq-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #11171F;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.faq-hr {
+    border-top: 2px solid #84CCD7;
+    width: 50%;
+}
+/********************** FAQS page css ends *****************************/
+
+/********************** ESG page css starts ***************************/
+.esg2-container{
+    background: url(../images/esg2.jpeg);
+    min-height: 120vh;
+    position: relative;
+}
+.esg3-container{
+    background: url(../images/esg3.jpeg);
+    min-height: 160vh;
+    position: relative;
+}
+/********************** FAQS page css ends *****************************/

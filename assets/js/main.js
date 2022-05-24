@@ -13,6 +13,11 @@ $(document).ready(function(){
         keyboard: false
     });
 
+    $('.image1-inner img').on('click', function(){
+        $(this).css("display","none");
+        $(".image1-container iframe").css("display","block")
+    })
+
     $('.navbar li a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });

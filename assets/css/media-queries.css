@@ -21,6 +21,10 @@
     .image1-container{
         margin-top: 0px;
     }
+    .image1-container iframe{
+        height: 40vh;
+        min-height: 40vh;
+    }
     .leadership-message-container {
         text-align: left;
     }
@@ -138,4 +142,11 @@
     .image-wrapper{
         min-height: 40vh;
     }
+
+    /********************** FAQS page css starts ***************************/
+    .faq-hr {
+        border-top: 2px solid #84CCD7;
+        width: 100%;
+    }
+    /********************** FAQS page css ends *****************************/
 }
