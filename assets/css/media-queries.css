@@ -112,18 +112,12 @@
         padding: 0px 0px;
         color: #fff;
     }
-    .timeline ul li:last-child {
-        margin:0px 0px 0px 20px;
-    }
-
     .faq-dot{
         margin-right: 5px;
     }
-    /* .subscribe-container .c-para,
-    .subscribe-container .subscribe-heading{
-        padding-left: 45px;
-        margin-bottom: 0px;
-    } */
+    .subscribe-container {
+        margin: 0px;
+    }
     .subscribe-counter{
         vertical-align: baseline;
     }
@@ -133,8 +127,17 @@
     .row-document-container{
         border-bottom: unset;
     }
-    .col-document-container:not(:last-child){
+    .document-container {
         border-bottom: 1px solid #11171F;
+        display: flex !important;
+        flex-direction: column;
+        align-items: unset;
+    }
+    .document-container div:nth-child(1){
+        text-align: left;
+    }
+    .document-container div:nth-child(2){
+        text-align: right;
     }
     .span-heading2{
         margin-left: 0px !important;
@@ -143,6 +146,36 @@
         min-height: 40vh;
     }
 
+    .district-box-container {
+        flex-direction: column;
+    }
+    .district-box-wrapper {
+        flex-direction: column;
+        height: 100%;
+    }
+    .district-box-inner {
+        flex: unset;
+        height: 360px;
+    }
+    .services-wrapper {
+        width: 100% !important;
+    }
+    #section-overview .col1{
+        padding-top: 20px;
+    }
+    .truncated-link {
+        display: block;
+    }
+    .show-more{
+        display: none;
+    }
+    .truncated-link {
+        display: block;
+        color: #84CCD7;
+        font-family: gothambold;
+        font-size: 12px;
+        text-decoration: underline;
+    }
     /********************** FAQS page css starts ***************************/
     .faq-hr {
         border-top: 2px solid #84CCD7;

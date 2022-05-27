@@ -13,6 +13,11 @@ $(document).ready(function(){
         keyboard: false
     });
 
+    $(".service-box-inner").mouseover(function(){
+        var imgSrc = $(this).find("img").attr("src")
+        console.log('*imgSrc: ', imgSrc)
+      });
+
     $('.image1-inner img').on('click', function(){
         $(this).css("display","none");
         $(".image1-container iframe").css("display","block")
@@ -20,6 +25,16 @@ $(document).ready(function(){
 
     $('.navbar li a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
+    });
+
+    $(".truncated-link").click(function () {
+        if($(".truncated-text").hasClass("show-more")) {
+            $(this).text("Show less");
+        } else {
+            $(this).text("Show more");
+        }
+
+        $(".truncated-text").toggleClass("show-more");
     });
 
     $(".bank-list-item").click(function(){
@@ -47,10 +62,6 @@ $(document).ready(function(){
         }else{
             $(this).find(".bank-icon").attr("src", "assets/images/down-icon.png")
         }
-    })
-
-    $('.watch-btn').click(function(){
-        $('#video-modal').modal('toggle')
     })
 
     $('#select-country').change(function(){

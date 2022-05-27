@@ -88,10 +88,8 @@ body {
     color: #84CCD7;
 }
 .c-para{
-    font-family: gothambook;
-    color: #000000;
-    font-weight: 400 !important;
-    font-size: 16px;
+    font-family: gotham;
+    color: #11171F;
 }
 .country-list label{
     display: block;
@@ -112,11 +110,18 @@ body {
 .watch-btn{
     color: #fff;
     background-color: #C3B9AE;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
     text-align: center;
-    width: 140px;
+    display: inline-block;
     cursor: pointer;
+}
+.watch-btn a {
+    color: #fff;
+}
+.watch-btn a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 .tecom-number-container{
@@ -129,17 +134,23 @@ body {
 .tecom-number-container .tecom-number-inner{
     padding: 30px 20px;
     background-color: #ece7e5;
-    height: 150px;
+    height: 100%;
+    border-radius: 30px;
     /* padding: 5px; */
 }
 .tecom-number-container .number-heading{
     color: #84CCD7;
-    font-size: 18px;
+    font-size: 55px;
     font-weight: 700;
+    line-height: 65px;
+    font-family: gothambold;
+    margin-bottom: 0px;
 }
 .tecom-number-container .number-text{
     color: #11171F;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
 }
 .apexcharts-legend.apexcharts-align-bottom.apx-legend-position-right{
     top: 100px !important;
@@ -209,8 +220,8 @@ body {
 .c-heading4{
     color: #84CCD7;
     font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 6px;
+    font-size: 18px;
+    letter-spacing: 8px;
     font-family: gothambold;
     margin-bottom: auto;
     text-transform: uppercase;
@@ -244,8 +255,10 @@ body {
     font-size: 12px;
 }
 .further-info{
-    color:#7A7979;
-    font-size: 12px;
+    color:#11171F;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
 }
 .approach-list-container ul{
     padding-left: 15px;
@@ -272,16 +285,21 @@ body {
     image-rendering: -webkit-optimize-contrast;
 }
 .image9-container{
-    background: url(../images/image9.jpg);
+    /* background: url(../images/image9.jpg); */
     min-height: 80vh;
 }
 .image1-container{
-    background: url(../images/image1.jpg);
-    min-height: 90vh;
+    /* background: url(../images/image1.jpg); */
+    min-height: 110vh;
+    position: relative;
+}
+.image2-container{
+    /* background: url(../images/image2.jpg); */
+    min-height: 120vh;
     position: relative;
 }
 .image1-container iframe {
-    min-height: 90vh;
+    min-height: 110vh;
 }
 .image1-inner {
     position: absolute;
@@ -290,7 +308,7 @@ body {
     transform: translate(-50%, -50%)
 }
 .image5-container{
-    background: url(../images/image5.jpg);
+    /* background: url(../images/image5.jpg); */
     min-height: 80vh;
 }
 .image6-container img{
@@ -308,15 +326,16 @@ body {
     margin-right: 15px;
     font-family: gothambold;
 }
-.row-document-container:not(:last-child){
-    border-bottom: 1px solid #11171F;
-}
 .row-document-container:last-child{
     padding-bottom:3em
 }
-.document-container2{
-    margin-left: 100px;
+.document-container {
+    border-bottom: 1px solid #11171F;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
 }
+
 
 
 .faq-item{
@@ -396,13 +415,17 @@ body {
 }
 .bank-list {
     padding: 1rem 0;
+    border-right: 1px solid #11171F;
 }
 .bank-list-desktop-container{
     display: flex-box;
 }
 .bank-list-desktop-container .bank-intro-row,
 .bank-list-desktop-container .bank-details-col,
-#section-documents .row{
+#section-invest .row,
+#section-subscribe .row,
+#section-banks .row,
+#section-faqs .row{
     background-color: #f8f7f5;
 }
 .bank-list-mobile-container{
@@ -423,6 +446,7 @@ body {
 .bank-list-item.active{
     color: #84CCD7;
 }
+.bank-details-mobile p,
 .bank-details p{
     font-size: 20px;
     line-height: 24px;
@@ -451,7 +475,7 @@ body {
 }
 .subscribe-heading{
     font-family: gothambold;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 15px;
     padding-bottom: 0px;
     transform: uppercase;
@@ -482,9 +506,9 @@ body {
     background-image: url(../images/subscribe-image5.png);
 }
 .div-group{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     font-family: gothambold;
-    text-transform: uppercase;
     color: #7A7979;
 }
 .div-group .div-dot{
@@ -517,12 +541,10 @@ body {
     margin-bottom: 5px;
 }
 .subscribe-content .subscribe-para{
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 18px;
+    font-size: 15px;
     margin-bottom: 2em;
-}
-.intro-col{
-    margin-top: 4em;
+    text-transform: none;
 }
 
 
@@ -538,6 +560,12 @@ section {
 .navbar-dark .navbar-nav .nav-link {
     font-size: 12px !important;
     letter-spacing: 2px;
+}
+
+.page-content {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 /********************** General classes ***************************/
@@ -559,25 +587,281 @@ section {
 .fs-20 {
     font-size: 20px;
 }
+.fs-24 {
+    font-size: 24px;
+}
 .fs-22 {
     font-size: 22px;
+}
+.fs-36 {
+    font-size: 36px;
 }
 
 .fw-4{
     font-weight: 400;
 }
+.fw-7{
+    font-weight: 700;
+}
 .fst-i{
     font-style: italic;
+}
+.lh-21{
+    line-height: 21px;
 }
 .lh-22{
     line-height: 22px;
 }
+.lh-27{
+    line-height: 27px;
+}
 .lh-30{
     line-height: 30px;
+}
+.lh-40{
+    line-height: 40px;
 }
 .ml-15{
     margin-left: 15px;
 }
+.tt-u{
+    text-transform: uppercase;
+}
+.ff-gbk {
+    font-family: gothambook;
+}
+.ff-gbd {
+    font-family: gothambold;
+}
+
+/********************** District section css starts ***************************/
+.district-box-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+.district-box-wrapper{
+    box-sizing: border-box;
+    display: flex;
+}
+.district-box-inner{
+    display:inline-block;
+    height: 250px;
+    border: 1px solid #7A7979;
+    flex: 1;
+}
+.district-box-wrapper:nth-child(1),
+.district-box-wrapper:nth-child(2){
+    width: 100%;
+    margin: 0px 15px;
+}
+.services-wrapper{
+    width: 77% !important;
+    margin: 0px 15px !important;
+}
+.district-box-wrapper:nth-child(1) .district-box-inner{
+    box-sizing: border-box;
+    border-bottom: none;
+}
+
+.district-image-1 {
+    background: url(../images/district1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-2 {
+    background: url(../images/district2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-3 {
+    background: url(../images/district3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-4 {
+    background: url(../images/district3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-5 {
+    background: url(../images/district5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.district-image-6 {
+    background: url(../images/district6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-7 {
+    background: url(../images/district7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-8 {
+    background: url(../images/district8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-9 {
+    background: url(../images/district9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-10 {
+    background: url(../images/district10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-11 {
+    background: url(../images/district11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-12 {
+    background: url(../images/district12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-13 {
+    background: url(../images/district13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.district-image-14 {
+    background: url(../images/district14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.district-image-1:hover{
+    background: url(../images/district-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-2:hover{
+    background: url(../images/district-bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-3:hover{
+    background: url(../images/district-bg3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-4:hover{
+    background: url(../images/district-bg4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-5:hover{
+    background: url(../images/district-bg5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-6:hover{
+    background: url(../images/district-bg6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-7:hover{
+    background: url(../images/district-bg7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-8:hover{
+    background: url(../images/district-bg8.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.district-image-9:hover{
+    background: url(../images/district-bg9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-10:hover{
+    background: url(../images/district-bg10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-11:hover{
+    background: url(../images/district-bg11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-12:hover{
+    background: url(../images/district-bg12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-13:hover{
+    background: url(../images/district-bg13.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.district-image-14:hover{
+    background: url(../images/district-bg14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.service-box-1:hover{
+    background: url(../images/district-bg11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.service-box-2:hover{
+    background: url(../images/district-bg12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.service-box-3:hover{
+    background: url(../images/district-bg13.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.service-box-4:hover{
+    background: url(../images/district-bg14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.district-box-heading{
+    font-family: gothambold;
+}
+.district-box-content{
+    font-family: gothambook;
+    font-size: 14px;
+    font-weight: 500
+}
+.c-link,
+.c-link:hover {
+    color: #A4DBE8;
+    text-decoration: underline;
+}
+.truncated-text {
+    display: block;
+}
+.truncated-link {
+    display: none;
+}
+/********************** District section css ends ***************************/
 
 /********************** FAQS page css starts ***************************/
 .page-container{
