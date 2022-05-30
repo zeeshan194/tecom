@@ -85,6 +85,7 @@
     }
     .bank-list-mobile-container{
         display: block;
+        padding: 2rem 0;
     }
 
     .navbar-dark .navbar-nav .nav-link {
@@ -139,6 +140,10 @@
     .document-container div:nth-child(2){
         text-align: right;
     }
+    .span-heading{
+        font-size: 30px;
+        line-height: 36px;
+    }
     .span-heading2{
         margin-left: 0px !important;
     }
@@ -163,17 +168,23 @@
     #section-overview .col1{
         padding-top: 20px;
     }
-    .truncated-link {
-        display: block;
-    }
     .show-more{
         display: none;
     }
-    .truncated-link {
+    .show-more-link {
         display: block;
+    }
+    .show-less-link {
+        display: none;
+    }
+    .truncated-text {
+        display: none;
+    }
+    .truncated-link {
+        /* display: block; */
         color: #84CCD7;
         font-family: gothambold;
-        font-size: 12px;
+        font-size: 18px;
         text-decoration: underline;
     }
     /********************** FAQS page css starts ***************************/

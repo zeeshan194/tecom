@@ -142,7 +142,6 @@ body {
     color: #84CCD7;
     font-size: 55px;
     font-weight: 700;
-    line-height: 65px;
     font-family: gothambold;
     margin-bottom: 0px;
 }
@@ -593,6 +592,9 @@ section {
 .fs-22 {
     font-size: 22px;
 }
+.fs-28 {
+    font-size: 28px;
+}
 .fs-36 {
     font-size: 36px;
 }
@@ -620,6 +622,9 @@ section {
 }
 .lh-40{
     line-height: 40px;
+}
+.pl-15{
+    padding-left: 15px;
 }
 .ml-15{
     margin-left: 15px;
@@ -861,6 +866,13 @@ section {
 .truncated-link {
     display: none;
 }
+
+ul.list-container li{
+    margin: 0px 15px;
+}
+.investors-list{
+    padding-left: 25px;
+}
 /********************** District section css ends ***************************/
 
 /********************** FAQS page css starts ***************************/
@@ -886,7 +898,7 @@ section {
 }
 /********************** FAQS page css ends *****************************/
 
-/********************** ESG page css starts ***************************/
+/********************** ESG section css starts ***************************/
 .esg2-container{
     background: url(../images/esg2.jpeg);
     min-height: 120vh;
@@ -897,7 +909,13 @@ section {
     min-height: 160vh;
     position: relative;
 }
-/********************** FAQS page css ends *****************************/
+#section-esg .list-container li{
+    margin: 0px 30px;
+}
+#section-esg .icons-with-text {
+    padding: 0px 50px
+}
+/********************** ESG section css ends *****************************/
 
 /********************** management section css starts ***************************/
 .carousel-button-container{

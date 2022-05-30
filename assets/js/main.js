@@ -20,11 +20,11 @@ $(document).ready(function(){
         $("body").css("direction", "ltr")
     }
 
-    $('#country-access-modal').modal({
-        show: true,
-        backdrop: 'static',
-        keyboard: false
-    });
+    // $('#country-access-modal').modal({
+    //     show: true,
+    //     backdrop: 'static',
+    //     keyboard: false
+    // });
 
     $(".service-box-inner").mouseover(function(){
         var imgSrc = $(this).find("img").attr("src")
@@ -41,13 +41,17 @@ $(document).ready(function(){
     });
 
     $(".truncated-link").click(function () {
-        if($(".truncated-text").hasClass("show-more")) {
-            $(this).text("Show less");
+        if($(this).hasClass("show-more-link")) {
+            $(this).css("display", "none");
+            $(this).siblings('.show-less-link').css("display", "block")
+            $(this).siblings('.truncated-text').css("display", "block")
         } else {
-            $(this).text("Show more");
+            $(this).css("display", "none");
+            $(this).siblings('.show-more-link').css("display", "block")
+            $(this).siblings('.truncated-text').css("display", "none")
         }
 
-        $(".truncated-text").toggleClass("show-more");
+        // $(".truncated-text").toggleClass("show-more");
     });
 
     $(".bank-list-item").click(function(){
