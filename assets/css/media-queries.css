@@ -182,4 +182,16 @@
         width: 100%;
     }
     /********************** FAQS page css ends *****************************/
+
+    /********************** FAQS page css starts ***************************/
+    .carousel-buttons-col{
+        text-align: right;
+        text-align: -webkit-right;
+    }
+    .slide-container {
+        min-height: 450px;
+        height: 450px;
+        overflow-y: auto;
+    }
+    /********************** FAQS page css ends *****************************/
 }

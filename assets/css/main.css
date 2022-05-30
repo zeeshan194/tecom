@@ -898,3 +898,70 @@ section {
     position: relative;
 }
 /********************** FAQS page css ends *****************************/
+
+/********************** management section css starts ***************************/
+.carousel-button-container{
+	background: transparent;
+	height: 80px;
+	width: 70px;
+	position: relative;
+	margin-left: 1px;
+}
+.carousel-button-container .carousel-control-next, 
+.carousel-button-container .carousel-control-prev {
+	width: 15px;
+    opacity: 1;
+}
+.carousel-sliders-container .carousel-item {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.slide-container .management-image {
+	width: 100%;
+}
+.slide-container {
+	min-height: 410px;
+    height: 410px;
+    overflow-y: auto;
+    background: #EAE7E4;
+}
+.carousel-sliders-container .slide-heading {
+    color: #84CCD7;
+    font-weight: 700;
+    font-size: 26px;
+}
+.carousel-sliders-container .slide-content-container {
+    padding: 5px 15px;
+}
+.carousel-sliders-container .slide-content1{
+    font-size: 14px;
+    /* line-height: 27px; */
+    font-weight: 400;
+    color: #11171F;
+}
+.carousel-sliders-container .slide-content2{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #11171F;
+}
+.carousel-button-container .carousel-control-prev-icon {
+    background-image: url(../images/left-arrow.png)
+}
+.carousel-button-container .carousel-control-next-icon {
+    background-image: url(../images/right-arrow.png)
+}
+.management-hr{
+    border-top: 1px solid #C3B9AE;
+}
+.management-item{
+    font-size: 22px;
+    font-family: gothambook;
+    margin-top: 0px !important;
+    cursor: default;
+}
+.managment-icon-container{
+    width: 30px;
+}
+
+/********************** management section css ends *****************************/
