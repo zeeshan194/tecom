@@ -1013,7 +1013,7 @@ ul.list-container li{
     color: #fff;
     margin-right: 5px;
     flex: 3;
-    padding: 10px;
+    padding: 15px;
 }
 .fin-col1-2{
     background: #E5E5E5;
@@ -1027,8 +1027,11 @@ ul.list-container li{
     color: #11171F;
     font-weight: 400;
 }
-.chart-image{
-    height: 100%;
+.chart-image1{
+    width: 100%;
+}
+.chart-image2{
+    width: 73%;
 }
 /********************** Financial section css ends ***************************/
 
@@ -1086,6 +1089,7 @@ ul.list-container li{
     text-transform: uppercase;
     padding: 30px 20px;
     text-align: center;
+    font-family: gothambold;
 }
   
 .operational-desktop-container .operational-logos {
@@ -1168,6 +1172,54 @@ ul.list-container li{
 }
 /********************** Operational section css ends ***************************/
 
+/********************** Financial section css ends *****************************/
+.esg-pillar-header{
+    background: #d0cabf;
+    color: #11171F;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px 0px;
+    font-family: gothambold;
+}
+.esg-pillar-container{
+    display: flex;
+    color: #11171F;
+}
+.esg-pillar-col{
+    flex: 1;
+    margin: 10px;
+}
+.esg-pillar-heading{
+    text-transform: uppercase;
+    font-size: 22px;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    font-family: gothambold;
+}
+.esg-pillar-item{
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #f9faf4;
+    text-align: center;
+    padding: 15px 0px;
+    /* font-family: gothambook; */
+}
+.esg-pillar-col .esg-pillar-item{
+    margin-bottom: 10px;
+}
+.esg-pillar-col .esg-pillar-item:last-child{
+    margin-bottom: 0px;
+}
+.esg-pillar-border-container{
+    display: flex;
+}
+.esg-pillar-border-item{
+    flex: 1;
+    height: 10px;
+}
+/********************** Financial section css ends *****************************/
 
 /********************** Updated css ***************************/
 .c-mx-15{
@@ -1188,3 +1240,4 @@ ul.list-container li{
     padding: 60px 0px;
 }
 /**************************************************/
+

@@ -26,6 +26,14 @@ $(document).ready(function(){
     //     keyboard: false
     // });
 
+    $('.collapse').on('shown.bs.collapse', function () {
+        console.log("*opened")
+     });
+     
+     $('.collapse').on('hidden.bs.collapse', function () {
+        console.log("Closed")
+     });
+     
     $(".service-box-inner").mouseover(function(){
         var imgSrc = $(this).find("img").attr("src")
         console.log('*imgSrc: ', imgSrc)
@@ -177,6 +185,8 @@ $(".district-box-inner").mouseout(function(){
 	        }
 	    }
 	});
+
+    
 /*****************management carousel script end*******************/
     
     // let options = {
