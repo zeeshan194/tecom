@@ -90,6 +90,15 @@ $(document).ready(function(){
         }
     })
 
+    $(".collapse-item").click(function(){
+        let src = $(this).find(".collapse-icon").attr("src")
+        if(src === "assets/images/down-icon.png"){
+            $(this).find(".collapse-icon").attr("src", "assets/images/up-icon.png")
+        }else{
+            $(this).find(".collapse-icon").attr("src", "assets/images/down-icon.png")
+        }
+    })
+
     $('#select-country').change(function(){
         let selectedCountry = $('#select-country').val()
         if(selectedCountry){

@@ -223,4 +223,26 @@
         padding: 10px;
     }
     /********************** Financial section css ends *****************************/
+
+    /********************** Operational section css ends *****************************/
+    .operational-desktop-container{
+        display: none;
+    }
+    .operational-mobile-container{
+        display: block;
+    }
+    .operational-col2 {
+        padding: 15px;
+    }
+    /********************** Operational section css ends *****************************/
+
+    /*** updated css ***/
+    #section-overview .c-flex-row,
+    #section-subscribe .c-flex-row {
+        flex-direction: column-reverse;
+    }
+    #section-overview .c-flex-col1{
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
 }
