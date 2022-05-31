@@ -160,7 +160,10 @@
     }
     .district-box-inner {
         flex: unset;
-        height: 360px;
+        height: 240px;
+    }
+    .district-box-text{
+        padding:50px 30px;
     }
     .services-wrapper {
         width: 100% !important;

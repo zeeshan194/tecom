@@ -121,6 +121,19 @@ $(document).ready(function(){
         })
     })
 
+
+/*****************district script start******************************/
+
+$(".district-box-inner").mouseover(function(){
+    $(this).find(".district-hover-image").show();
+    $(this).find(".district-image").hide();
+})
+$(".district-box-inner").mouseout(function(){
+    $(this).find(".district-hover-image").hide();
+    $(this).find(".district-image").show();
+})
+/*****************district script start******************************/
+
 /*****************management carousel script start*******************/
     $('.carousel').carousel({
 		interval: false,
