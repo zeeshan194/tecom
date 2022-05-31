@@ -115,6 +115,8 @@ body {
     text-align: center;
     display: inline-block;
     cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .watch-btn a {
     color: #fff;
@@ -438,6 +440,7 @@ body {
     cursor: default;
 }
 .bank-list-item{
+    padding-right: 10px;
     margin-bottom: 15px;
     font-size: 24px;
     color: #11171F;
