@@ -10,6 +10,43 @@ function scroll_to(clicked_link, nav_height) {
 	}
 }
 
+function loadCountryRestrictionModal() {
+    var hours = 60; // country restriction pop apear time
+    var now = new Date().getTime();
+    var setupTime = localStorage.getItem('setupTime');
+    var isCountrySelected = localStorage.getItem('isCountrySelected');
+    if (setupTime == null || isCountrySelected == null) {
+        $('#country-access-modal').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: false
+        });
+        localStorage.setItem('setupTime', now)
+    } else {
+        if(now-setupTime > hours*60*60*1000) {
+            $('#country-access-modal').modal({
+                show: true,
+                backdrop: 'static',
+                keyboard: false
+            });
+            localStorage.clear()
+            localStorage.setItem('setupTime', now);
+        }
+    }
+}
+
+let proceedContent = `IMPORTANT INFORMATION 
+
+You have indicated that you are located in the United States. These materials are not intended for, directed at or accessible by persons located in the United States. However, persons located in the United States that make the certifications below can access these materials. Please read the certifications below carefully and provide the information requested in order to receive these materials. If you cannot make the certifications below, please choose “I DO NOT AGREE” below. 
+
+Certifications 
+
+“We are a “qualified institutional buyer” (a “QIB”) as defined in Rule 144A under the US Securities Act of 1933, as amended (the “Securities Act”). Further, if we are acting as a fiduciary or agent for one or more investor accounts, (a) each such account is a QIB, (b) we have investment discretion with respect to each account, and (c) we have full power and authority to make the representations, warranties, agreements and acknowledgements herein on behalf of each such account.” 
+
+“We acknowledge that the materials relate to a transaction that is not subject to, or is only available in the United States pursuant to an exemption from, the registration requirements of the Securities Act.” 
+
+By clicking “I AGREE” below, you are certifying that the certifications and information provided are accurate and that you would like to access the materials. You agree that the materials you receive are for your own use and will not be distributed to any person outside of your organisation.  `;
+
 
 $(document).ready(function(){
     var url = window.location.href;
@@ -20,11 +57,8 @@ $(document).ready(function(){
         $("body").css("direction", "ltr")
     }
 
-    // $('#country-access-modal').modal({
-    //     show: true,
-    //     backdrop: 'static',
-    //     keyboard: false
-    // });
+
+    loadCountryRestrictionModal()
 
     $('#section-management .collapse').on('shown.bs.collapse', function () {
         let id = $(this).attr("id").split("-")[1];
@@ -115,6 +149,7 @@ $(document).ready(function(){
     $('#select-country').change(function(){
         let selectedCountry = $('#select-country').val()
         if(selectedCountry){
+            localStorage.setItem("isCountrySelected",1)
             $(".select-country-error").css("display", "none")
         }else{
             $(".select-country-error").css("display", "block")
@@ -122,16 +157,33 @@ $(document).ready(function(){
     })
     $('.proceed-btn').click(function(){
         let selectedCountry = $('#select-country').val()
-        if(selectedCountry){
+        if(["Canada", "Australia", "Japan", "South Africa"].includes(selectedCountry)){
+            console.log('*here')
+            $("#redirect-btn1").css("display", "block")
+            $(".modal-not-agree").css("display", "block")
+            $(".modal-not-agree .c-modal-content").text(`You have indicated that you are located in Australia, Canada, South Africa or Japan. We therefore regret that we cannot provide you with access to these materials. `);
             $(".modal-initial-content").css("display", "none")
+        }else if(["UAE", "USA", "Others"].includes(selectedCountry)){
+            $(".modal-initial-content").css("display", "none")
+            if(selectedCountry === "USA"){
+                $(".modal-proceed-content c-modal-content").text(proceedContent)
+            }
             $(".modal-proceed-content").css("display", "block")
         }else{
             $(".select-country-error").css("display", "block")
         }
 
         $(".not-agree-btn").click(function(){
-            $(".modal-proceed-content").css("display", "none")
-            $(".modal-not-agree").css("display", "block")
+            if(selectedCountry === "USA"){
+                $(".modal-not-agree .c-modal-content").text(`Due to legal restrictions, these materials are not directed at or accessible by persons located in the United States (except to qualified institutional buyers within the meaning of the US Securities Act of 1933, as amended). We apologise for any inconvenience this may cause. `)
+                $("#redirect-btn2").css("display", "block")
+                $(".modal-not-agree").css("display", "block")
+            }else{
+                $(".modal-not-agree .c-modal-content").text(`Not Agreed. We regret that, due to regulatory restrictions, we are unable to provide you with access to this section of our website.`)
+                $(".modal-not-agree").css("display", "block")
+            }
+                $(".modal-proceed-content").css("display", "none")
+            
         })
 
         $(".agree-btn").click(function(){
