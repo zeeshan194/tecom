@@ -194,7 +194,7 @@
   }
 
   .timeline ul li:last-child {
-    margin:0px 0px 0px 20px !important;
+    margin:0px 0px 0px 19px !important;
   }
   time:nth-child(odd){
       font-size: 22px;
@@ -340,7 +340,7 @@
 .timeline ul li:last-child {
   list-style-type: none;
   position: relative;
-  width: 3px;
+  width: 4px;
   margin: 0 auto;
   padding-top: 60px;
   background: #414042;

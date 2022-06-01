@@ -122,8 +122,9 @@
     .subscribe-counter{
         vertical-align: baseline;
     }
-    .sub-item{
+    .subscribe-container .sub-item{
         background-position: -35px;
+        padding: 0 25px;
     }
     .row-document-container{
         border-bottom: unset;
@@ -225,6 +226,12 @@
     .chart-image{
         width: 100%
     }
+    .chart-image-container{
+        text-align: center;
+    }
+    .fin-content1{
+        margin-top: 15px;
+    }
     /********************** Financial section css ends *****************************/
 
     /********************** Operational section css ends *****************************/
@@ -238,18 +245,55 @@
         padding: 15px;
     }
     /********************** Operational section css ends *****************************/
+    
+    /********************** ESG section css ends *****************************/
+    .esg-pillar-container {
+        flex-direction: column;
+    }
+    .esg-images-container{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .esg-image-item{
+        flex: 50%;
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+    /********************** ESG section css ends *****************************/
 
     /*** updated css ***/
     #section-overview .c-flex-row,
     #section-subscribe .c-flex-row {
         flex-direction: column-reverse;
     }
-    #section-overview .c-flex-col1{
+    .leadership-message-row{
+        flex-direction: column !important;
+    }
+    #section-overview .c-flex-col1,
+    #section-overview .leadership-message-col{
         padding-top: 30px;
         padding-bottom: 0px;
     }
     #section-banks .faq-hr{
         margin: 0px;
         border: 1px solid #E5E5E5;
+    }
+    .opportunity-content {
+        margin: 20px 0px 0px 0px;
+    }
+    #section-management {
+        padding-top: 15px;
+    }
+    .management-row-1{
+        margin-top: 0px;
+    }
+    #section-esg .icons-with-text{
+        padding: 0px;
+    }
+    .esg-flex-item {
+        margin-top: 15px;
+    }
+    .achievements-row{
+        margin-top: 0px;
     }
 }
