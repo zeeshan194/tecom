@@ -26,12 +26,17 @@ $(document).ready(function(){
     //     keyboard: false
     // });
 
-    $('.collapse').on('shown.bs.collapse', function () {
-        console.log("*opened")
+    $('#section-management .collapse').on('shown.bs.collapse', function () {
+        let id = $(this).attr("id").split("-")[1];
+        let manId = $(`#management-image-${id}`).attr("id");
+        $(`#management-image-${id}`).css("display","none");
+        console.log("*slide opened", manId)
      });
      
-     $('.collapse').on('hidden.bs.collapse', function () {
-        console.log("Closed")
+     $('#section-management .collapse').on('hidden.bs.collapse', function () {
+        let id = $(this).attr("id").split("-")[1];
+        $(`#management-image-${id}`).css("display","block");
+        console.log("*slide closed", id)
      });
      
     $(".service-box-inner").mouseover(function(){

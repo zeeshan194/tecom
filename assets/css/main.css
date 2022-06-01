@@ -964,7 +964,7 @@ ul.list-container li{
 .slide-container {
 	min-height: 410px;
     height: 410px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     background: #EAE7E4;
 }
 .carousel-sliders-container .slide-heading {
@@ -986,6 +986,8 @@ ul.list-container li{
     line-height: 22px;
     font-weight: 400;
     color: #11171F;
+    height: 300px;
+    overflow-y: auto;
 }
 .carousel-button-container .carousel-control-prev-icon {
     background-image: url(../images/left-arrow.png)
